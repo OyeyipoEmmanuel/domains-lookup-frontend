@@ -18,7 +18,7 @@ const Result = ({ letterLengthSelected, tld }: ResultProps) => {
         queryFn: async () => {
             await new Promise(resolve => setTimeout(resolve, 1000));
 
-            const res = await fetch(`http://localhost:5000/api/domains?letters=${letterLengthSelected}`)
+            const res = await fetch(`/api/domains?letters=${letterLengthSelected}`)
 
             return res.json()
         },
