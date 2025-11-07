@@ -1,6 +1,19 @@
 {
   "type": "module",
   "dependencies": {
-    "dotenv": "^17.2.3"
-  }
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0"
+  },
+  "name": "domain-lookup-frontend",
+  "version": "1.0.0",
+  "description": "A simple Node.js tool to check domain availability using the GoDaddy API. Perfect for finding available short domain combinations.",
+  "main": "lookup.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

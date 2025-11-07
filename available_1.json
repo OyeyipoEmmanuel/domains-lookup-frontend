@@ -1,0 +1,39 @@
+{
+  ".xyz": [
+    "i.xyz",
+    "j.xyz",
+    "u.xyz",
+    "w.xyz",
+    "x.xyz",
+    "y.xyz",
+    "z.xyz"
+  ],
+  ".io": [],
+  ".com": [],
+  ".ai": [],
+  ".tech": [
+    "a.tech",
+    "b.tech",
+    "c.tech",
+    "d.tech",
+    "e.tech",
+    "f.tech",
+    "g.tech",
+    "h.tech",
+    "i.tech",
+    "j.tech",
+    "k.tech",
+    "l.tech",
+    "m.tech",
+    "n.tech",
+    "o.tech",
+    "q.tech",
+    "r.tech",
+    "s.tech",
+    "v.tech",
+    "w.tech",
+    "x.tech",
+    "y.tech",
+    "z.tech"
+  ]
+}
