@@ -31,7 +31,7 @@ app.get("/api/domains", (req, res) => {
       .json({ error: "Invalid letters parameter. Only 1, 2, or 3 allowed." });
   }
 
-  const file = `available_${letters}.json`;
+  const file = path.join(__dirname, "data", `available_${letters}.json`);
 
   try {
     if (!fs.existsSync(file)) {
@@ -86,9 +86,9 @@ app.get("/api/run", (req, res) => {
 // ----------------------
 // FRONTEND: Serve React build
 // ----------------------
-app.use(express.static(path.join(__dirname, "client/dist")));
+app.use(express.static(path.join(__dirname, "frontend/dist")));
 
-app.get("*", (req, res) => {
+app.get(/.*/, (req, res) => {
   res.sendFile(path.join(__dirname, "client/dist", "index.html"));
 });
 
